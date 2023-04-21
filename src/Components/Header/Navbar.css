@@ -1,4 +1,6 @@
 .main-header {
-    background-color: rgb(109, 157, 197);
-    height: 6 em;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(100, 98, 98);
+    height: 6em;
 }

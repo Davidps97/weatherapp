@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <div className="main-header">
       <div className="logo-header-box">
-        <img src={process.env.PUBLIC_URL + "/IconMeteo.jpeg"} alt="MeteoIcon" />
+        <img src={process.env.PUBLIC_URL + "/MeteoCant.PNG"} alt="MeteoIcon" />
       </div>
 
       <div className="search-header-box">

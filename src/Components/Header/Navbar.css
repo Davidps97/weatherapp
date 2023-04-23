@@ -1,6 +1,130 @@
 .main-header {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(100, 98, 98);
-    height: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d2f3e;
+  height: 8em;
+}
+
+.logo-header-box,
+.info-lang-header-box,
+.search-header-box {
+  width: 170px;
+}
+
+/*Logo*/
+.logo-header-box {
+  height: 128px;
+}
+
+.logo-header-box img {
+  width: 170px;
+  height: 128px;
+}
+
+/*Search*/
+.search {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  transition-duration: 500ms;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  color: transparent;
+  border: 1px solid white;
+  overflow: hidden;
+  background: url("../../../public/search.svg") no-repeat transparent;
+  filter: brightness(0) invert(1);
+  background-size: 22px;
+  background-position: 45% 50%;
+}
+
+.search:hover {
+  width: 200px;
+  cursor: pointer;
+  padding-left: 40px;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: 1px solid #ffffff;
+  background: url("../../../public/search.svg") no-repeat white;
+  filter: brightness(1) invert(0);
+  background-size: 22px;
+  background-position: 45% 50%;
+}
+
+.search:focus {
+  width: 200px;
+  cursor: pointer;
+  padding-left: 40px;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  background: url("../../../public/search.svg") no-repeat white;
+  filter: brightness(1) invert(0);
+  background-size: 22px;
+  background-position: 10px;
+}
+
+/*Date & lang*/
+.info-lang-header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+/*Date*/
+.date-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+/*Lang*/
+.lang-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.lang-header label {
+  margin-right: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.lang-header select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 4px;
+  width: 120px;
+  max-width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.lang-header select:hover,
+.lang-header select:focus {
+  border-color: #ccc;
+}
+
+.lang-header select option {
+  background-color: #fff;
+  color: #333;
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "place": "Las Palmas de Gran Canaria",
+    "temperature": "24°C",
+    "icon": "./sun.svg",
+    "rain": "10%",
+    "feels_like": "22°C",
+    "snow": "0%",
+    "sky": "Despejado",
+    "wind": "18 km/h",
+    "humidity": "75%",
+    "uv": "Alto"
+  },
+  {
+    "place": "Santa Cruz de Tenerife",
+    "temperature": "23°C",
+    "icon": "./cloud.svg",
+    "rain": "70%",
+    "feels_like": "20°C",
+    "snow": "0%",
+    "sky": "Nublado",
+    "wind": "12 km/h",
+    "humidity": "85%",
+    "uv": "Moderado"
+  },
+  {
+    "place": "Puerto del Rosario",
+    "temperature": "22°C",
+    "icon": "./cloud-rain.svg",
+    "rain": "100%",
+    "feels_like": "18°C",
+    "snow": "0%",
+    "sky": "Lluvioso",
+    "wind": "24 km/h",
+    "humidity": "90%",
+    "uv": "Bajo"
+  }
+]

@@ -1,4 +1,22 @@
-/*Menu*/
+/* Botón hamburguesa */
+.menu-btn {
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* Menú */
 .navigation {
   width: 100%;
   background-color: #f2f2f2;
@@ -29,6 +47,38 @@
   background-color: #ddd;
 }
 
+/* Mostrar menú en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    width: 100%;
+    display: none;
+  }
+
+  .menu.show-menu {
+    display: block;
+  }
+
+  .navigation li {
+    display: block;
+    margin: 0;
+  }
+
+  .navigation a {
+    padding: 10px 15px;
+  }
+}
+
+/* Para dispositivos con una pantalla más pequeña que 576px */
+@media screen and (max-width: 576px) {
+  .navigation a {
+    font-size: 14px;
+  }
+}
+
 /*Boxes*/
 .main-home {
   display: flex;
@@ -49,17 +99,20 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #1d2f3e, #507696);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #1d2f3e, #50769654),
+    url("../../../public/box-background.jpg") center/cover no-repeat
+      rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .temp-line-box {
   width: 70rem;
   height: 15.9em;
-  background-color: grey;
   margin: 10px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, #1d2f3e, #507696);
+  background: linear-gradient(to bottom, #1d2f3e, #50769654),
+    url("../../../public/under-box.jpg") center/cover no-repeat
+      rgba(0, 0, 0, 0.7);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,8 +121,10 @@
   height: 37.18em;
   margin: 10px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, #1d2f3e, #507696);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #1d2f3e, #50769654),
+    url("../../../public/rigth-box.jpg") center/cover no-repeat
+      rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .place-box {

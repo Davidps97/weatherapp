@@ -5,6 +5,12 @@ import Footer from "../../Components/Footer/Footer";
 import temperatures from "./temperatures.json";
 
 function Home() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   const [selectedPlace, setSelectedPlace] = useState(temperatures[0]);
 
   const handlePlaceClick = (place) => {
@@ -26,9 +32,12 @@ function Home() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar  />
       <nav className="navigation">
-        <ul>
+        <button className="menu-btn" onClick={toggleMenu}>
+          Menu
+        </button>
+        <ul className={`menu ${showMenu ? "show-menu" : ""}`}>
           {temperatures.map((place) => (
             <li key={place.place}>
               <a href="#" onClick={() => handlePlaceClick(place)}>
@@ -62,7 +71,10 @@ function Home() {
                 <h2>Pronóstico</h2>
               </div>
               <div className="total-small-box">
-                <img src={process.env.PUBLIC_URL + "/icoRain.svg"} alt="Pronóstico del tiempo" />
+                <img
+                  src={process.env.PUBLIC_URL + "/icoRain.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Lluvia: {selectedPlace.rain}
               </div>
               <div className="total-small-box">

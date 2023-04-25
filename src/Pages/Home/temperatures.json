@@ -34,5 +34,65 @@
     "wind": "24 km/h",
     "humidity": "90%",
     "uv": "Bajo"
+  },
+  {
+    "place": "Valverde (El Hierro)",
+    "temperature": "21°C",
+    "icon": "./sun.svg",
+    "rain": "5%",
+    "feels_like": "19°C",
+    "snow": "0%",
+    "sky": "Despejado",
+    "wind": "15 km/h",
+    "humidity": "70%",
+    "uv": "Alto"
+  },
+  {
+    "place": "Santa Cruz de La Palma",
+    "temperature": "25°C",
+    "icon": "./sun.svg",
+    "rain": "5%",
+    "feels_like": "23°C",
+    "snow": "0%",
+    "sky": "Despejado",
+    "wind": "10 km/h",
+    "humidity": "65%",
+    "uv": "Alto"
+  },
+  {
+    "place": "San Sebastián de La Gomera",
+    "temperature": "23°C",
+    "icon": "./cloud.svg",
+    "rain": "70%",
+    "feels_like": "20°C",
+    "snow": "0%",
+    "sky": "Nublado",
+    "wind": "14 km/h",
+    "humidity": "80%",
+    "uv": "Moderado"
+  },
+  {
+    "place": "Arrecife (Lanzarote)",
+    "temperature": "26°C",
+    "icon": "./sun.svg",
+    "rain": "0%",
+    "feels_like": "24°C",
+    "snow": "0%",
+    "sky": "Despejado",
+    "wind": "20 km/h",
+    "humidity": "60%",
+    "uv": "Alto"
+  },
+  {
+    "place": "Caleta de Sebo (La Graciosa)",
+    "temperature": "25°C",
+    "icon": "./sun.svg",
+    "rain": "0%",
+    "feels_like": "23°C",
+    "snow": "0%",
+    "sky": "Despejado",
+    "wind": "12 km/h",
+    "humidity": "70%",
+    "uv": "Alto"
   }
 ]

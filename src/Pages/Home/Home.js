@@ -57,34 +57,63 @@ function Home() {
         </div>
         <div className="total-box">
           <div className="total-info-box">
-            <h2>Pronostico</h2>
             <div className="total-mid-box">
               <div className="total-small-box">
+                <h2>Pronóstico</h2>
+              </div>
+              <div className="total-small-box">
+                <img src={process.env.PUBLIC_URL + "/icoRain.svg"} alt="Pronóstico del tiempo" />
                 Lluvia: {selectedPlace.rain}
               </div>
               <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/thermo.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Temperatura: {selectedPlace.temperature}
               </div>
-            </div>
-            <div className="total-mid-box">
               <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/sens.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Sensación Térmica: {selectedPlace.feels_like}
               </div>
-              <div className="total-small-box">Nieve: {selectedPlace.snow}</div>
-            </div>
-            <div className="total-mid-box">
               <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/cloud-snow.svg"}
+                  alt="Pronóstico del tiempo"
+                />
+                Nieve: {selectedPlace.snow}
+              </div>
+              <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/sky.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Estado del Cielo: {selectedPlace.sky}
               </div>
               <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/windy.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Viento: {selectedPlace.wind}
               </div>
-            </div>
-            <div className="total-mid-box">
               <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/humidity.svg"}
+                  alt="Pronóstico del tiempo"
+                />
                 Humedad: {selectedPlace.humidity}
               </div>
-              <div className="total-small-box">UV: {selectedPlace.uv}</div>
+              <div className="total-small-box">
+                <img
+                  src={process.env.PUBLIC_URL + "/glasses.svg"}
+                  alt="Pronóstico del tiempo"
+                />
+                UV: {selectedPlace.uv}
+              </div>
             </div>
           </div>
         </div>

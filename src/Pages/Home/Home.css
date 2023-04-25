@@ -123,11 +123,19 @@
   color: white;
   align-items: center;
 }
+.total-info-box h2 {
+  margin-left: 50px;
+}
 
-.total-mid-box {
+.total-small-box {
+  width: 100%;
+  margin-top: 30px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 10px;
-  justify-content: space-around;
+  align-items: center;
+}
+
+.total-small-box img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }

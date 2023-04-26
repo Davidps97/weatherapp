@@ -52,7 +52,7 @@ function Home() {
           <div className="main-info-box">
             <div className="info-column">
               <div className="place-box">
-                {selectedPlace.place} - {selectedPlace.time}
+                {selectedPlace.place} | {selectedPlace.time}
               </div>
             </div>
             <div className="info-row">

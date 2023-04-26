@@ -10,7 +10,7 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1583px) {
   .menu-btn {
     display: block;
   }
@@ -48,7 +48,7 @@
 }
 
 /* Mostrar menú en pantallas pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1583px) {
   .navigation {
     flex-wrap: wrap;
   }
@@ -93,7 +93,7 @@
 }
 
 .main-info-box {
-  width: 70rem;
+  width: 55rem;
   height: 20em;
   margin: 10px;
   border-radius: 10px;
@@ -106,18 +106,18 @@
 }
 
 .temp-line-box {
-  width: 70rem;
+  width: 55rem;
   height: 15.9em;
   margin: 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #1d2f3e, #50769654),
     url("../../../public/under-box.jpg") center/cover no-repeat
       rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .total-info-box {
-  width: 32rem;
+  width: 28rem;
   height: 37.18em;
   margin: 10px;
   border-radius: 10px;
@@ -125,6 +125,46 @@
     url("../../../public/rigth-box.jpg") center/cover no-repeat
       rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1583px){
+  .main-info-box{
+    width: 45rem;
+  }
+  .temp-line-box{
+    width: 45rem;
+  }
+  .total-info-box{
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 1115px){
+  .main-info-box{
+    width: 95%;
+  }
+  .temp-line-box{
+    width: 95%;
+  }
+  .total-info-box{
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 864px){
+  .main-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-info-box{
+    width: 98%;
+  }
+  .temp-line-box{
+    width: 98%;
+  }
+  .total-info-box{
+    width: 98%;
+  }
 }
 
 .place-box {
@@ -178,6 +218,7 @@
   color: white;
   align-items: center;
 }
+
 .total-info-box h2 {
   margin-left: 50px;
 }
@@ -194,3 +235,4 @@
   height: 30px;
   margin-right: 5px;
 }
+

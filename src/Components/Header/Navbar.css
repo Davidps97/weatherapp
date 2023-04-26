@@ -7,12 +7,6 @@
   height: 8em;
 }
 
-.logo-header-box,
-.info-lang-header-box,
-.search-header-box {
-  width: 300px;
-}
-
 /*Logo*/
 .logo-header-box {
   height: 128px;
@@ -40,7 +34,7 @@
   background: url("../../../public/search.svg") no-repeat transparent;
   filter: brightness(0) invert(1);
   background-size: 22px;
-  background-position: 45% 50%;
+  background-position: 50% 50%;
 }
 
 .search:hover {
@@ -53,7 +47,7 @@
   background: url("../../../public/search.svg") no-repeat white;
   filter: brightness(1) invert(0);
   background-size: 22px;
-  background-position: 45% 50%;
+  background-position: 50% 50%;
 }
 
 .search:focus {

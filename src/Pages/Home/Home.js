@@ -32,7 +32,7 @@ function Home() {
 
   return (
     <div>
-      <Navbar  />
+      <Navbar />
       <nav className="navigation">
         <button className="menu-btn" onClick={toggleMenu}>
           Menu
@@ -62,7 +62,46 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="temp-line-box"></div>
+          <div className="temp-line-box">
+            <h3>Pronóstico por horas</h3>
+            <div className="temp-mid-box">
+              <div className="forecast-time">
+                <div>Ahora</div>
+                <div>{selectedPlace.temperature}</div>
+                <div className="forecast-time-img-container">
+                  <img src={selectedPlace.icon} alt="weather icon" />
+                </div>
+              </div>
+              <div className="forecast-time">
+                <div>12:00</div>
+                <div>{selectedPlace.temperature}</div>
+                <div className="forecast-time-img-container">
+                  <img src={selectedPlace.icon} alt="weather icon" />
+                </div>
+              </div>
+              <div className="forecast-time">
+                <div>13:00</div>
+                <div>{selectedPlace.temperature}</div>
+                <div className="forecast-time-img-container">
+                  <img src={selectedPlace.icon} alt="weather icon" />
+                </div>
+              </div>
+              <div className="forecast-time">
+                <div>14:00</div>
+                <div>{selectedPlace.temperature}</div>
+                <div className="forecast-time-img-container">
+                  <img src={selectedPlace.icon} alt="weather icon" />
+                </div>
+              </div>
+              <div className="forecast-time">
+                <div>15:00</div>
+                <div>{selectedPlace.temperature}</div>
+                <div className="forecast-time-img-container">
+                  <img src={selectedPlace.icon} alt="weather icon" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="total-box">
           <div className="total-info-box">

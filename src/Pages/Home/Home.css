@@ -8,6 +8,7 @@
   border: none;
   color: #000;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1583px) {
@@ -22,6 +23,7 @@
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .navigation ul {
@@ -139,7 +141,7 @@
   }
 }
 
-@media screen and (max-width: 1115px){
+@media screen and (max-width: 1208px){
   .main-info-box{
     width: 95%;
   }

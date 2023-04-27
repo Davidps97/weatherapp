@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, LayersControl } from "react-leaflet";
-import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-openweathermap/leaflet-openweathermap.css";
 import "leaflet-openweathermap";
@@ -17,19 +15,39 @@ const Map = () => {
       <div className="map-container">
         <MapContainer
           center={[28.380602, -15.869722]}
-          zoom={8}
+          zoom={4}
           style={{ height: "66vh", width: "100%" }}
         >
           <LayersControl position="topright">
             <LayersControl.BaseLayer checked name="OpenStreetMap">
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="Lluvia">
+            <LayersControl.Overlay name="Lluvia" checked>
               <TileLayer
-                url={`https://{s}.tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=${API_KEY}`}
+                url={`https://{s}.tile.openweathermap.org/map/precipitation_cls/{z}/{x}/{y}.png?appid=${API_KEY}`}
+                attribution='Map data © <a href="https://openweathermap.org">OpenWeatherMap</a>'
+                raincls="rain-layer"
+              />
+            </LayersControl.Overlay>
+            <LayersControl.Overlay name="Nubes">
+              <TileLayer
+                url={`https://{s}.tile.openweathermap.org/map/clouds_cls/{z}/{x}/{y}.png?appid=${API_KEY}`}
+                attribution='Map data © <a href="https://openweathermap.org">OpenWeatherMap</a>'
+                cloudcls="rain-layer"
+              />
+            </LayersControl.Overlay>
+            <LayersControl.Overlay name="Viento">
+              <TileLayer
+                url={`https://{s}.tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=${API_KEY}`}
                 attribution='Map data © <a href="https://openweathermap.org">OpenWeatherMap</a>'
               />
-            </LayersControl.BaseLayer>
+            </LayersControl.Overlay>
+            <LayersControl.Overlay name="Temperatura">
+              <TileLayer
+                url={`https://{s}.tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=${API_KEY}`}
+                attribution='Map data © <a href="https://openweathermap.org">OpenWeatherMap</a>'
+              />
+            </LayersControl.Overlay>
           </LayersControl>
         </MapContainer>
       </div>

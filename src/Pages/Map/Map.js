@@ -9,33 +9,7 @@ import Footer from "../../Components/Footer/Footer";
 import "./Map.css";
 
 const Map = () => {
-  const [map, setMap] = useState(null);
-  const [currentLayer, setCurrentLayer] = useState(null);
-
-  useEffect(() => {
-    if (map) {
-      // Agrega la capa de lluvia al mapa
-      const rainLayer = L.OWM.rain({
-        appId: "d0901a819793be9ac2c66657ad323ef2",
-        opacity: 0.5,
-      });
-
-      // Agrega la capa de velocidad del viento al mapa
-      const windLayer = L.OWM.wind({
-        appId: "d0901a819793be9ac2c66657ad323ef2",
-        opacity: 0.5,
-      });
-
-      // Agrega las capas al control de capas
-      const overlayMaps = {
-        Precipitación: rainLayer,
-        "Velocidad del viento": windLayer,
-      };
-
-      L.control.layers(null, overlayMaps).addTo(map);
-      setCurrentLayer(rainLayer);
-    }
-  }, [map]);
+  const API_KEY = "d0901a819793be9ac2c66657ad323ef2";
 
   return (
     <div>
@@ -45,11 +19,16 @@ const Map = () => {
           center={[28.380602, -15.869722]}
           zoom={8}
           style={{ height: "66vh", width: "100%" }}
-          whenCreated={setMap}
         >
           <LayersControl position="topright">
             <LayersControl.BaseLayer checked name="OpenStreetMap">
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            </LayersControl.BaseLayer>
+            <LayersControl.BaseLayer name="Lluvia">
+              <TileLayer
+                url={`https://{s}.tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=${API_KEY}`}
+                attribution='Map data © <a href="https://openweathermap.org">OpenWeatherMap</a>'
+              />
             </LayersControl.BaseLayer>
           </LayersControl>
         </MapContainer>

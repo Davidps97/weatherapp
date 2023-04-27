@@ -122,8 +122,29 @@
   color: white;
 }
 
+.temp-info-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .temp-line-box h3 {
   margin-top: 2%;
+}
+
+.temp-line-box button {
+  margin-top: 2%;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #7f7f804f, #9999995d);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .temp-mid-box {

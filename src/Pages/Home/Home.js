@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "../../Components/Header/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import temperatures from "./temperatures.json";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
@@ -63,7 +64,12 @@ function Home() {
             </div>
           </div>
           <div className="temp-line-box">
-            <h3>Pronóstico por horas</h3>
+            <div className="temp-info-box">
+              <h3>Pronóstico por horas</h3>
+              <Link to="/map">
+                <button>Ver mapa de Preddiciones</button>
+              </Link>
+            </div>
             <div className="temp-mid-box">
               <div className="forecast-time">
                 <div>Ahora</div>

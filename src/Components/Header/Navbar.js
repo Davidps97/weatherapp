@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [language, setLanguage] = useState("es"); // Inicialmente el idioma es español
@@ -21,9 +22,14 @@ function Navbar() {
 
   return (
     <div className="main-header">
-      <div className="logo-header-box">
-        <img src={process.env.PUBLIC_URL + "/MeteoCant.PNG"} alt="MeteoIcon" />
-      </div>
+      <Link to="/home">
+        <div className="logo-header-box">
+          <img
+            src={process.env.PUBLIC_URL + "/MeteoCant.PNG"}
+            alt="MeteoIcon"
+          />
+        </div>
+      </Link>
 
       <div className="search-header-box">
         <input className="search" />

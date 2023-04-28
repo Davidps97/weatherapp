@@ -30,7 +30,10 @@ The following third-party components were used in this project:
 
 To run MeteoCan on your local machine, you'll need to follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/meteocan.git
+Clone the repository: 
+```sh
+git clone https://github.com/your-username/meteocan.git
+```
 
 Install the dependencies:
 ```sh

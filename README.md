@@ -33,7 +33,7 @@ To run MeteoCan on your local machine, you'll need to follow these steps:
 Clone the repository: git clone https://github.com/your-username/meteocan.git
 
 Install the dependencies:
-```sh
+```bash
 npm install 
 ``` 
 

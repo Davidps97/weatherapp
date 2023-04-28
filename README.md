@@ -34,7 +34,7 @@ Clone the repository: git clone https://github.com/your-username/meteocan.git
 
 Install the dependencies:
 ```bash
-npm install 
+git commit -m 
 ``` 
 
 Start the development server: npm start

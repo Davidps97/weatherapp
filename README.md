@@ -8,15 +8,22 @@ This project is a weather application that provides current weather information 
 The following third-party components were used in this project:
 
 React.js
+
 Leaflet
+
 react-router-dom
+
 Tutorials
+
 
 ## The following tutorials were helpful in creating this project:
 
 React Official Tutorial
+
 Leaflet Getting Started Guide
+
 React Router Dom Tutorial
+
 Other
 
 ## Installation and Usage

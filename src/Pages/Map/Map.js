@@ -51,7 +51,7 @@ const Map = () => {
           </LayersControl>
         </MapContainer>
       </div>
-      <Footer />
+      <Footer companyName="MeteoCan" />
     </div>
   );
 };

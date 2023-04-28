@@ -67,7 +67,7 @@ function Home() {
             <div className="temp-info-box">
               <h3>Pronóstico por horas</h3>
               <Link to="/map">
-                <button>Ver mapa de Preddiciones</button>
+                <button>Ver mapa de Predicciones</button>
               </Link>
             </div>
             <div className="temp-mid-box">
@@ -175,7 +175,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer companyName="MeteoCan" />
     </div>
   );
 }

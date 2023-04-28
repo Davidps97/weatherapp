@@ -1,52 +1,59 @@
 import React from "react";
 import "./Footer.css";
 
-function Footer() {
+function Footer({ companyName }) {
   return (
     <div className="main-footer">
       <div className="social-box">
-        <span className="social-media-buttons"></span>
         <span className="social-media-button">
-          <img
-            alt="Instagram"
-            src={process.env.PUBLIC_URL + "/instagram.svg"}
-          ></img>
+          <a href="https://www.instagram.com" target="blank">
+            <img
+              alt="Instagram"
+              src={process.env.PUBLIC_URL + "/instagram.svg"}
+            />
+          </a>
         </span>
         <span className="social-media-button">
-          <img
-            alt="Twitter"
-            src={process.env.PUBLIC_URL + "/twitter.svg"}
-          ></img>
+          <a href="https://www.twitter.com" target="blank">
+            <img alt="Twitter" src={process.env.PUBLIC_URL + "/twitter.svg"} />
+          </a>
         </span>
         <span className="social-media-button">
-          <img alt="Github" src={process.env.PUBLIC_URL + "/github.svg"}></img>
+          <a
+            href="https://github.com/Davidps97/weatherapp/tree/dev"
+            target="blank"
+          >
+            <img alt="Github" src={process.env.PUBLIC_URL + "/github.svg"} />
+          </a>
         </span>
         <span className="social-media-button">
-          <img alt="Figma" src={process.env.PUBLIC_URL + "/figma.svg"}></img>
+          <a href="https://www.figma.com" target="blank">
+            <img alt="Figma" src={process.env.PUBLIC_URL + "/figma.svg"} />
+          </a>
         </span>
       </div>
       <div className="info-box">
         <div class="row">
           <ul>
             <li>
-              <a href="#">Contact us</a>
+              <p>Contact us</p>
             </li>
             <li>
-              <a href="#">Our Services</a>
+              <p>Our Services</p>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <p>Privacy Policy</p>
             </li>
             <li>
-              <a href="#">Terms & Conditions</a>
+              <p>Terms & Conditions</p>
             </li>
             <li>
-              <a href="#">Career</a>
+              <p>Career</p>
             </li>
           </ul>
         </div>
         <div class="row">
-          <p>MeteoCan © 2023 - All rights reserved</p>
+          <p>{companyName} © 2023 - All rights reserved</p>
         </div>
       </div>
     </div>

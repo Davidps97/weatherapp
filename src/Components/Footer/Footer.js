@@ -27,7 +27,7 @@ function Footer({ companyName }) {
           </a>
         </span>
         <span className="social-media-button">
-          <a href="https://www.figma.com" target="blank">
+          <a href="https://www.figma.com/file/AdQqDi6JNV640DOEI0mGby/Meteo-Canarias?node-id=0-1&t=3qPzcdvJmB33YVqL-0" target="blank">
             <img alt="Figma" src={process.env.PUBLIC_URL + "/figma.svg"} />
           </a>
         </span>

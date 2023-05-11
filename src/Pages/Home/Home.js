@@ -4,9 +4,14 @@ import Navbar from "../../Components/Header/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import temperatures from "./temperatures.json";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
+
+  const language = useSelector((state) => state.language.value);
+
+  const island = useSelector((state) => state.island.value);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -48,6 +53,7 @@ function Home() {
           ))}
         </ul>
       </nav>
+      {island}
       <div className="main-home">
         <div className="main-temp-box">
           <div className="main-info-box">
@@ -65,9 +71,17 @@ function Home() {
           </div>
           <div className="temp-line-box">
             <div className="temp-info-box">
-              <h3>Pronóstico por horas</h3>
+              <h3>
+                {language == "spanish"
+                  ? "Pronóstico por horas"
+                  : "Time Forecast"}
+              </h3>
               <Link to="/map">
-                <button>Ver mapa de Predicciones</button>
+                <button>
+                  {language == "spanish"
+                    ? "Ver mapa de Predicciones"
+                    : "Show Forecast Map"}
+                </button>
               </Link>
             </div>
             <div className="temp-mid-box">

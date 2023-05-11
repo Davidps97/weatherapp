@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { changeLanguage } from "./language";
+import { useSelector, useDispatch } from "react-redux";
+import { changeIsland } from "./island";
 
 function Navbar() {
-  const [language, setLanguage] = useState("es"); // Inicialmente el idioma es español
+  const dispatch = useDispatch();
 
-  const changeLanguage = (event) => {
-    setLanguage(event.target.value); // Actualiza el idioma cuando se cambia la selección
+  const changeLanguage_ = (event) => {
+    dispatch(changeLanguage(event.target.value)); // Actualiza el idioma cuando se cambia la selección
   };
+
+  const changeIsland_ = (event) => {
+    dispatch(changeIsland(event.target.value));
+  }
+
+  const island = useSelector((state) => state.island.value);
+
+  const language = useSelector((state) => state.language.value);
 
   const getCurrentDate = () => {
     const date = new Date();
@@ -17,7 +28,10 @@ function Navbar() {
       month: "long",
       day: "numeric",
     };
-    return date.toLocaleDateString(language, options);
+    return date.toLocaleDateString(
+      language == "spanish" ? "es" : "en",
+      options
+    );
   };
 
   return (
@@ -32,7 +46,7 @@ function Navbar() {
       </Link>
 
       <div className="search-header-box">
-        <input className="search" />
+        <input className="search" onChange={changeIsland_}  value={island}/>
       </div>
 
       <div className="info-lang-header-box">
@@ -43,10 +57,10 @@ function Navbar() {
           <select
             id="language-select"
             value={language}
-            onChange={changeLanguage}
+            onChange={changeLanguage_}
           >
-            <option value="es">Español</option>
-            <option value="en">Inglés</option>
+            <option value="spanish">Español</option>
+            <option value="english">Inglés</option>
           </select>
         </div>
       </div>

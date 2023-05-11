@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const islandSlice = createSlice({
   name: "island",
-  initialState: { value: "Las Palmas" },
+  initialState: { value: "" },
   reducers: {
     changeIsland: (state, newIsland) => {
       state.value = newIsland.payload;

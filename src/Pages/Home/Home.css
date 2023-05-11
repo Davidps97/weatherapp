@@ -95,7 +95,7 @@
 }
 
 .main-info-box {
-  width: 55rem;
+  width: 60rem;
   height: 20em;
   margin: 10px;
   border-radius: 10px;
@@ -108,7 +108,7 @@
 }
 
 .temp-line-box {
-  width: 55rem;
+  width: 60rem;
   height: 15.9em;
   margin: 10px;
   border-radius: 10px;
@@ -175,7 +175,7 @@
 }
 
 .total-info-box {
-  width: 28rem;
+  width: 32rem;
   height: 37.18em;
   margin: 10px;
   border-radius: 10px;
@@ -219,9 +219,21 @@
   }
   .temp-line-box{
     width: 98%;
+    height: 60em;
   }
   .total-info-box{
     width: 98%;
+  }
+  .temp-mid-box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .forecast-time{
+    width: 30%;
   }
 }
 

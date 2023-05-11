@@ -53,14 +53,14 @@ function Navbar() {
         <div className="date-header">{getCurrentDate()}</div>
 
         <div className="lang-header">
-          <label htmlFor="language-select">Elegir idioma:</label>
+          <label htmlFor="language-select">{language == "spanish" ? "Elegir idioma: " : "Choose language: "}</label>
           <select
             id="language-select"
             value={language}
             onChange={changeLanguage_}
           >
-            <option value="spanish">Español</option>
-            <option value="english">Inglés</option>
+            <option value="spanish">{language == "spanish" ? "Español" : "Spanish"}</option>
+            <option value="english">{language == "spanish" ? "Inglés" : "English"}</option>
           </select>
         </div>
       </div>

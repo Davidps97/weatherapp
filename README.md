@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# MeteoCan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project is a weather application that provides current weather information for locations in the Canary Islands. The application features a responsive user interface with a search function, a navbar that allows users to switch between languages, and a footer with links to social media, privacy policy, terms and conditions, career, and other information.
 
-In the project directory, you can run:
+## Third-party Components
 
-### `npm start`
+The following third-party components were used in this project:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-React.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Leaflet
 
-### `npm test`
+-react-router-dom
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Tutorials
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## The following tutorials were helpful in creating this project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-React Official Tutorial
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Leaflet Getting Started Guide
 
-### `npm run eject`
+-React Router Dom Tutorial
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Other
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation and Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run MeteoCan on your local machine, you'll need to follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Clone the repository: 
+```sh
+git clone https://github.com/your-username/meteocan.git
+```
 
-## Learn More
+Install the dependencies:
+```sh
+npm install
+``` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the development server: 
+```sh
+npm start
+``` 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open http://localhost:3000 in your browser to view the app.
 
-### Code Splitting
+##  The following are additional details about the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project uses a JSON file named temperatures.json to store the temperature data for each location.
 
-### Analyzing the Bundle Size
+The footer component is defined in the Footer.css file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The navbar component allows users to switch between Spanish and English languages.
 
-### Making a Progressive Web App
+The project uses the useState and useEffect hooks from the React library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The project uses the Link component from the react-router-dom library to handle navigation.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions to MeteoCan are welcome! If you notice any bugs or have any suggestions for new features, please feel free to open an issue or submit a pull request.

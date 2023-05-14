@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { changeLanguage } from "./language";
@@ -72,6 +72,9 @@ function Navbar() {
         <div className="link_div">
           <Link to="/form" className="button-link">
           {language === "spanish" ? "Formulario" : "Form"}
+          </Link>
+          <Link to="/rss" className="button-link">
+          {language === "spanish" ? "RSS" : "RSS"}
           </Link>
         </div>
       </div>

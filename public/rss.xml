@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Noticias del tiempo en Gran Canaria</title>
+        <link>https://www.aemet.es/xml/municipios/localidad_35006.xml</link>
+        <description>Últimas noticias del tiempo en Gran Canaria.</description>
+        <language>es-es</language>
+        <pubDate>Fri, 14 May 2023 00:00:00 GMT</pubDate>
+        <lastBuildDate>Fri, 14 May 2023 00:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>Las Palmas de Gran Canaria</title>
+            <link>
+                https://www.aemet.es/xml/municipios/localidad_35016.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Gran Canaria proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 09:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Santa Cruz de Tenerife</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_38038.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Gran Canaria proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 10:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Puerto del Rosario</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_35020.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Puerto del Rosario proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 09:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Valverde</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_38044.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Valverde proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 10:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Santa Cruz de la Palma</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_38030.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Santa Cruz de la Palma proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 11:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>San Sebastián de la Gomera</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_38033.xml</link>
+            <description><![CDATA[Información meteorológica detallada para San Sebastián de la Gomera proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Arrecife</title>
+            <link>https://www.aemet.es/xml/municipios/localidad_35004.xml</link>
+            <description><![CDATA[Información meteorológica detallada para Arrecife proporcionada por la Agencia Estatal de Meteorología.]]></description>
+            <pubDate>Fri, 14 May 2023 13:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

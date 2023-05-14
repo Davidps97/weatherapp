@@ -36,6 +36,15 @@ function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const place = temperatures.find(
+      (temp) => temp.place.toLowerCase() === island.toLowerCase()
+    );
+    if (place) {
+      setSelectedPlace(place);
+    }
+  }, [island]);
+
   return (
     <div>
       <Navbar />
@@ -53,7 +62,6 @@ function Home() {
           ))}
         </ul>
       </nav>
-      {island}
       <div className="main-home">
         <div className="main-temp-box">
           <div className="main-info-box">
@@ -72,13 +80,13 @@ function Home() {
           <div className="temp-line-box">
             <div className="temp-info-box">
               <h3>
-                {language == "spanish"
+                {language === "spanish"
                   ? "Pronóstico por horas"
                   : "Time Forecast"}
               </h3>
               <Link to="/map">
                 <button>
-                  {language == "spanish"
+                  {language === "spanish"
                     ? "Ver mapa de Predicciones"
                     : "Show Forecast Map"}
                 </button>
@@ -86,7 +94,9 @@ function Home() {
             </div>
             <div className="temp-mid-box">
               <div className="forecast-time">
-                <div>{ language == "spanish" ? "Ahora" : "Now" }</div>
+                <div>{language === "spanish"
+                    ? "Ahora"
+                    : "Now"}</div>
                 <div>{selectedPlace.temperature}</div>
                 <div className="forecast-time-img-container">
                   <img src={selectedPlace.icon} alt="weather icon" />
@@ -127,56 +137,72 @@ function Home() {
           <div className="total-info-box">
             <div className="total-mid-box">
               <div className="total-small-box">
-                <h2>{ language == "spanish" ? "Pronóstico" : "Forecast" }</h2>
+                <h2>{language === "spanish"
+                    ? "Pronóstico"
+                    : "Forecast"}</h2>
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/icoRain.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Lluvia: " : "Rain: " }{selectedPlace.rain}
+                {language === "spanish"
+                    ? "Lluvia: "
+                    : "Rain: "} {selectedPlace.rain}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/thermo.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Temperatura: " : "Temperature: " } {selectedPlace.temperature}
+                {language === "spanish"
+                    ? "Temperatura: "
+                    : "Temperature: "} {selectedPlace.temperature}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/sens.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Sensación Térmica: " : "Thermal Sensation: " } {selectedPlace.feels_like}
+                 {language === "spanish"
+                    ? "Sensación Térmica: "
+                    : "Thermal sensation: "}{selectedPlace.feels_like}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/cloud-snow.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Nieve: " : "Snow: " } {selectedPlace.snow}
+                {language === "spanish"
+                    ? "Nieve: "
+                    : "Snow: "}{selectedPlace.snow}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/sky.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Estado del cielo: " : "Sky Condition: " } {selectedPlace.sky}
+                {language === "spanish"
+                    ? "Estado del Cielo: "
+                    : "Sky condition: "}{selectedPlace.sky}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/windy.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Viento: " : "Wind: " } {selectedPlace.wind}
+                {language === "spanish"
+                    ? "Viento: "
+                    : "Wind: "}{selectedPlace.wind}
               </div>
               <div className="total-small-box">
                 <img
                   src={process.env.PUBLIC_URL + "/humidity.svg"}
                   alt="Pronóstico del tiempo"
                 />
-                {language == "spanish" ? "Humedad: " : "Humidity: " } {selectedPlace.humidity}
+                {language === "spanish"
+                    ? "Humedad: "
+                    : "Humidity: "}{selectedPlace.humidity}
               </div>
               <div className="total-small-box">
                 <img

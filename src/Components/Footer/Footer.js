@@ -43,37 +43,37 @@ function Footer({ companyName }) {
           <ul>
             <li>
               <p>
-                {language == "spanish" ? "Contacta con nosotros" : "Contact Us"}
+                {language === "spanish" ? "Contacta con nosotros" : "Contact Us"}
               </p>
             </li>
             <li>
               <p>
-                {language == "spanish" ? "Nuestros Servicios" : "Our Services"}
+                {language === "spanish" ? "Nuestros Servicios" : "Our Services"}
               </p>
             </li>
             <li>
               <p>
-                {language == "spanish"
+                {language === "spanish"
                   ? "Política de Privacidad"
                   : "Privacy Policy"}
               </p>
             </li>
             <li>
               <p>
-                {language == "spanish"
+                {language === "spanish"
                   ? "Términos y Condiciones"
                   : "Terms & Conditions"}
               </p>
             </li>
             <li>
-              <p>{language == "spanish" ? "Empleo" : "Career"}</p>
+              <p>{language === "spanish" ? "Empleo" : "Career"}</p>
             </li>
           </ul>
         </div>
         <div className="row">
           <p>
             {companyName} © 2023 -
-            {language == "spanish"
+            {language === "spanish"
               ? " Todos los derechos reservados"
               : " All rights reserved"}
           </p>

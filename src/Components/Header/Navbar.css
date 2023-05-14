@@ -155,3 +155,21 @@
     width: 100%;
   }
 }
+
+.link_div {
+  margin-top: 5px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #ffffff;
+  color: #1d2f3e;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #2f4c64;
+  color: #ffffff;
+}

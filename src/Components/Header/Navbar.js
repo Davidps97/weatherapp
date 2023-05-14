@@ -14,7 +14,7 @@ function Navbar() {
 
   const changeIsland_ = (event) => {
     dispatch(changeIsland(event.target.value));
-  }
+  };
 
   const island = useSelector((state) => state.island.value);
 
@@ -29,7 +29,7 @@ function Navbar() {
       day: "numeric",
     };
     return date.toLocaleDateString(
-      language == "spanish" ? "es" : "en",
+      language === "spanish" ? "es" : "en",
       options
     );
   };
@@ -46,22 +46,33 @@ function Navbar() {
       </Link>
 
       <div className="search-header-box">
-        <input className="search" onChange={changeIsland_}  value={island}/>
+        <input className="search" onChange={changeIsland_} value={island} />
       </div>
 
       <div className="info-lang-header-box">
         <div className="date-header">{getCurrentDate()}</div>
 
         <div className="lang-header">
-          <label htmlFor="language-select">{language == "spanish" ? "Elegir idioma: " : "Choose language: "}</label>
+          <label htmlFor="language-select">
+            {language === "spanish" ? "Elegir idioma: " : "Choose language: "}
+          </label>
           <select
             id="language-select"
             value={language}
             onChange={changeLanguage_}
           >
-            <option value="spanish">{language == "spanish" ? "Español" : "Spanish"}</option>
-            <option value="english">{language == "spanish" ? "Inglés" : "English"}</option>
+            <option value="spanish">
+              {language === "spanish" ? "Español" : "Spanish"}
+            </option>
+            <option value="english">
+              {language === "spanish" ? "Inglés" : "English"}
+            </option>
           </select>
+        </div>
+        <div className="link_div">
+          <Link to="/form" className="button-link">
+          {language === "spanish" ? "Formulario" : "Form"}
+          </Link>
         </div>
       </div>
     </div>

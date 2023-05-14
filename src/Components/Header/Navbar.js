@@ -39,7 +39,7 @@ function Navbar() {
       <Link to="/home">
         <div className="logo-header-box">
           <img
-            src={process.env.PUBLIC_URL + "/MeteoCant.PNG"}
+            src={process.env.PUBLIC_URL + "/MeteoCanT.PNG"}
             alt="MeteoIcon"
           />
         </div>
